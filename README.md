@@ -7,3 +7,4 @@ Check online demo at https://journiversaire-ionic.web.app
 # Links
 
 * https://ionicframework.com/ Ionic - Cross-Platform Mobile App Development
+* Icons made by [Vectors Market]("https://www.flaticon.com/authors/) from https://www.flaticon.com/
