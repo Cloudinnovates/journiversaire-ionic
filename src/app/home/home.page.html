@@ -19,4 +19,8 @@
       [(ngModel)]="date" (ionChange)="onChange()"></ion-datetime>
   </ion-item>
 
+  <ion-item *ngFor="let birthday of birthdays; index as position">
+    <ion-label class="ion-text-wrap">{{ birthday }}</ion-label>
+  </ion-item>
+
 </ion-content>
