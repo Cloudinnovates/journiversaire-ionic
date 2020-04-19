@@ -14,7 +14,8 @@
   </ion-header>
 
   <ion-item>
-    <ion-datetime displayFormat="YYYY-MM-DD" placeholder="Select your birthday date"></ion-datetime>
+    <ion-datetime displayFormat="YYYY-MM-DD" placeholder="Select your birthday date"
+      [(ngModel)]="date" (ionChange)="onChange()"></ion-datetime>
   </ion-item>
 
 </ion-content>
