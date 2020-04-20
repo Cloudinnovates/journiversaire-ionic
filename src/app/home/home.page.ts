@@ -30,7 +30,7 @@ export class HomePage {
       });
       this.birthdays.push(
         index + "k: " +
-        format(nextDate, "PPPP") +
+        format(nextDate, "PPP") +
         " (" + formatDistance(nextDate, d) + ")");
     }
   }
