@@ -10,7 +10,7 @@ import formatDistance from 'date-fns/formatDistance';
 })
 export class HomePage {
 
-  date: string;
+  date: string = null;
   birthdays = [];
 
   constructor() { }

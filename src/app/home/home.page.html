@@ -1,17 +1,15 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Journiversaire
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Journiversaire</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+  <ion-card *ngIf="date === null">
+    <ion-card-header>
+      <ion-card-title>Journiversaire</ion-card-title>
+      <ion-card-subtitle>Celebrate same day every year is boring</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Please, select a date below to check your every 1000 days to celebrate!
+    </ion-card-content>
+  </ion-card>
 
   <ion-item>
     <ion-icon name="calendar-outline"></ion-icon>
@@ -22,5 +20,16 @@
   <ion-item *ngFor="let birthday of birthdays; index as position">
     <ion-label class="ion-text-wrap">{{ birthday }}</ion-label>
   </ion-item>
+
+  <ion-card>
+    <ion-card-content>
+      This is the
+      <a href="https://en.wikipedia.org/wiki/Progressive_web_app">PWA</a>
+      version of this very old
+      <a href="https://www.l-homme.com/cgi-bin/journiversaire.py">Python CGI version</a>.
+      <br>
+      Source code available on <a href="https://github.com/rangzen/journiversaire-ionic">my Github</a>.
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
